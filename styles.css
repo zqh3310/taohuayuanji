@@ -1,0 +1,215 @@
+:root {
+    --primary-color: #1E3D59;
+    --secondary-color: #17A2B8;
+    --accent-color: #FF6B6B;
+    --background-color: #F8F9FA;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* 网站标题样式 */
+.site-title {
+    text-align: center;
+    padding: 2.5rem 0;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-title h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Noto Serif SC', serif;
+    letter-spacing: 8px;
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.site-title h1::before,
+.site-title h1::after {
+    content: '❀';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+}
+
+.site-title h1::before {
+    left: -10px;
+}
+
+.site-title h1::after {
+    right: -10px;
+}
+
+/* 添加装饰性波浪效果 */
+.site-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(45deg, transparent 33.33%, #fff 33.33%, #fff 66.66%, transparent 66.66%);
+    background-size: 30px 20px;
+    opacity: 0.3;
+}
+
+/* 轮播图样式 */
+.carousel {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.carousel-item {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+/* 轮播控制按钮样式 */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    opacity: 0.8;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* 留言板样式 */
+.message-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.visitor-name {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.message-content {
+    color: #333;
+    line-height: 1.5;
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+/* 返回顶部按钮 */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    opacity: 0.8;
+}
+
+/* Bilibili链接样式 */
+.bilibili-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background-color: #FB7299;  /* Bilibili粉色 */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.bilibili-link:hover {
+    background-color: #FC8BAB;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(251, 114, 153, 0.3);
+}
+
+.bilibili-link i {
+    font-size: 1.5rem;
+} 
