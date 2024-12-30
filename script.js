@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const carouselElement = document.getElementById('imageCarousel');
     if (carouselElement) {
         const carousel = new bootstrap.Carousel(carouselElement, {
-            interval: 2000,    // 2秒切换一次
+            interval: 3000,    // 将 2000 改为 3000，表示3秒切换一次
             wrap: true,        // 循环播放
             keyboard: true,    // 键盘控制
             pause: 'hover',    // 鼠标悬停时暂停
